@@ -4,7 +4,7 @@ from datetime import datetime
 today = datetime.now()
 date = today.strftime('%m-%d-%Y')
 
-if today.strftime("%A") == "Saturday":
+if today.strftime("%A") == "Saturday": #you can change to logic here to fit your schedule
     shift_start = "5pm"
 elif today.strftime("%A") == "Sunday":
     shift_start = "12pm"
