@@ -1,6 +1,8 @@
 import win32com.client as client
+from datetime import date
 
-date = input("what is todays date")
+today = date.today()
+date = today.strftime('%m-%d-%Y')
 shift_start = input("What time did your shift start?")
 Logon =  input ("What time did you log on?")
 outlook = client.Dispatch("Outlook.Application")
